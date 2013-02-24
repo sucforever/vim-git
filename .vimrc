@@ -80,3 +80,54 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-
 map <silent> <F11> :!cscope -Rbq <CR><CR> :cs add cscope.out <CR>
 
 
+"----------------------------------
+"NERD_Tree插件设置
+"----------------------------------
+"设置打开nerdtree快捷键
+map <silent> <leader>nt :NERDTreeToggle<CR>
+"设置打开文件后，关闭NERDTree窗口
+"let NERDTreeQuitOnOpen=1
+let NERDTreeHighlightCursorline=1
+"设置显示标签
+let NERDTreeShowBookmarks=1
+"设置鼠标模式：目录单击打开，文件双击打开
+let NERDTreeMouseMode=2
+"设置显示隐藏文件
+let NERDTreeShowHidden=1
+
+"----------------------------------
+"OmniCppComplete插件设置
+"----------------------------------
+set nocp
+"set completeopt=menu
+
+"----------------------------------
+"winmanager插件设置
+"----------------------------------
+"winmanager窗口布局,用逗号分割的插件在同一个窗口显示，使用ctrl+n在不同插件间切换；使用|分割的插件，则在另外一个窗口中显示
+"let g:winManagerWindowLayout="TagList|BufExplorer,FileExplorer"
+"let g:winManagerWindowLayout="BufExplorer|FileExplorer|TagList"
+let g:winManagerWindowLayout="FileExplorer|TagList"
+
+""需要修改nerd_tree.vim文件；现在不能使用，有问题！
+"let g:winManagerWindowLayout="NERDTree|BufExplorer|TagList"
+
+"设置只剩一个窗口时，退出vim
+let g:persistentBehaviour=0
+"设置winmanager的宽度，默认为25
+let g:winManagerWidth=30
+
+"设置winmanager在vim启动时自动打开,还需要修改插件文件winmanager.vim
+"在winmanager.vim文件头添加以下语句
+"------------------------------------------------------------------------------
+		""libin add: set auto open WinManager
+		"if g:AutoOpenWinManager
+		"	autocmd VimEnter * nested call s:StartWindowsManager()|4wincmd w
+		"endif
+		""libin add
+"------------------------------------------------------------------------------
+		
+"let g:AutoOpenWinManager=1
+"设置打开winmanager快捷键
+map <silent> <leader>wm :WMToggle<CR>
+
