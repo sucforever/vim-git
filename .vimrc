@@ -1,3 +1,4 @@
+set nocompatible
 ""pathogen插件设置
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
@@ -77,7 +78,7 @@ map <silent> <leader>tl :TlistToggle<CR>
 "----------------------------------
 "设置quickfix窗口
 set cscopequickfix=s-,c-,d-,i-,t-,e-
-map <silent> <F11> :!cscope -Rbq <CR><CR> :cs add cscope.out <CR>
+map <silent> <F11> :!cscope -Rbq <CR><CR> :cs add cscope.out<CR>
 
 
 "----------------------------------
