@@ -1,3 +1,4 @@
+set wildmenu
 set nocompatible
 ""pathogen插件设置
 runtime bundle/vim-pathogen/autoload/pathogen.vim
@@ -26,8 +27,8 @@ set tabstop=4
 ""配色方案文件放在colors目录下
 set t_Co=256
 set background=dark
-"color molokai
-color solarized
+color molokai
+"color solarized
 "colorscheme desert
 
 ""设置搜索不高亮显示，默认为高亮显示
