@@ -135,3 +135,7 @@ let g:winManagerWidth=30
 "设置打开winmanager快捷键
 map <silent> <leader>wm :WMToggle<CR>
 
+"---------------------------------
+"mark setting
+"---------------------------------
+"map <silent> <leader>hl <Plug>MarkSet
