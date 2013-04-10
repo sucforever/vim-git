@@ -1,8 +1,9 @@
-set nocompatible
-set wildmenu
 ""pathogen插件设置
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
+
+set nocompatible
+set wildmenu
 ""去除vim的beep声音
 set vb t_vb=
 
@@ -27,7 +28,7 @@ set tabstop=4
 ""配色方案文件放在colors目录下
 set t_Co=256
 set background=dark
-color molokai
+colorscheme molokai
 "color solarized
 "colorscheme desert
 
