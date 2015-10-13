@@ -1,6 +1,6 @@
 ""pathogen插件设置
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+runtime vim-git/bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect("~/.vim/vim-git/bundle/{}")
 
 set nocompatible
 set wildmenu
